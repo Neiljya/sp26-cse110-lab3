@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Meeting notes for the Clan War Meeting.">
+    <title>Clan Meeting Notes</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    
+    <header>
+      <h1>Clan War Meeting</h1>
+      <h2>Hosted By: Neil Yang (Clan Leader)</h2>
+      <h3>Date: April 14, 2026</h3>
+      <nav>
+        <b>Tables of Content:</b>
+        <ul>
+          <li><a href="#attendance">Attendance</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#business">Business</a></li>
+          <li><a href="#media">Media & Notes</a></li>
+          <li><a href="#feedback">Feedback Form</a></li>
+        </ul>
+      </nav>
+      <hr>
+    </header>
+
+    <main>
+
+      <section id="attendance">
+        <h2>Attendees</h2>
+        <div>
+          <span>Present:</span> Lebron James, Jeremiah Smith, Michael Jordan, Bam Adebayo.
+        </div>
+      </section>
+
+      <section id="agenda">
+        <h2>Meeting Agenda</h2>
+        <ol>
+          <li>Introductions to Base</li>
+          <li>Attack Strategy</li>
+          <li>Follow Ups</li>
+        </ol>
+
+        <p>
+          Questions addressed at the end of meeting <br>
+          Wilt Chamberlain wants to lower the trophy requirements to be more <em>accessible</em> for new members
+        </p>
+      </section>
+
+      <section id="business">
+
+        <h2>TO DO:</h2>
+        <ul>
+          <li>Donate 20 goblines to Lebron <i>"The Goat"</i> James.</li>
+          <li>Decide on which bases to attack</li>
+          <li>Donate clan castle troops (please)</li>
+          <li><strong>IMPORTANT:</strong> Attack phase starts in less than 24 hours</li>
+        </ul>
+      </section>
+
+      <section id="media">
+        <h2>Media</h2>
+        
+        <details>
+          <summary>Click here to view the attack strategy</summary>
+          <p>This is the attack plan for base #1:</p>
+          <img src="diagram.jpg" alt="A whiteboard drawing showing the client-server architecture of the Pomodoro app">
+        </details>
+
+        <h3>Meeting Recordings</h3>
+        <p>Listen to the audio recording:</p>
+        <audio controls>
+          <source src="meetingvideo.mp3" type="audio/mpeg">
+        </audio>
+
+        <p>Watch the video playback:</p>
+        <video controls width="400">
+          <source src="meetingvideo.mp4" type="video/mp4">
+        </video>
+      </section>
+    </main>
+
+    <footer>
+      <hr>
+      <section id="feedback">
+        <h2>Feedback Form</h2>
+        <p>Please fill out this form so <s>I</s> we can improve on future meetings!</p>
+        
+        <form action="/submit-feedback" method="post">
+          <fieldset>
+            <legend>Feedback</legend>
+            
+            <p>
+              <label for="username">Name:</label>
+              <input type="text" id="username" name="username" placeholder="Devonta Smith">
+            </p>
+
+            <p>
+              <label for="rank">Clan Rank:</label>
+              <input list="ranks" id="rank" name="rank">
+              <datalist id="ranks">
+                <option value="Co-Leader">
+                <option value="Elder">
+                <option value="Member">
+              </datalist>
+            </p>
+
+            <p>
+              <label for="meeting-date">Date Submitted:</label>
+              <input type="date" id="meeting-date" name="meeting-date">
+            </p>
+
+            <p>Did you find this meeting informative?</p>
+            <input type="radio" id="prod-yes" name="productive" value="yes">
+            <label for="prod-yes">Yes</label>
+            <input type="radio" id="prod-no" name="productive" value="no">
+            <label for="prod-no">No</label>
+            <input type="radio" id="prod-no" name="productive" value="no">
+            <label for="prod-no">Maybe</label>
+            <input type="radio" id="prod-no" name="productive" value="no">
+            <label for="prod-no">So</label>
+
+            <p>
+              <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+              <label for="subscribe">Will you be attending future meetings?</label>
+            </p>
+
+
+            <p>
+              <label for="rating">Rate the meeting:</label>
+              <select id="rating" name="rating">
+                <option value="amazing">Amazing</option>
+                <option value="good">Good</option>
+                <option value="poor">Poor</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="comments">Additional Comments/Questions:</label><br>
+              <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+            </p>
+
+            <button type="button">Submit Feedback</button>
+          </fieldset>
+        </form>
+      </section>
+      
+      <p><i>Recorded by Lebron James. End of document.</i></p>
+    </footer>
+
+  </body>
+</html>
